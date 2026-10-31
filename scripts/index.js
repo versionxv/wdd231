@@ -110,6 +110,12 @@ function createInfoCard(filteredCourses) {
         card.appendChild(name);
 
         document.querySelector(".container").appendChild(card);
+
+        const totalCredits = filteredCourses.reduce((accumulator, course) => {
+            return accumulator + course.credits;
+        }, 0);
+
+        document.getElementById('value').textContent = totalCredits;
     });
 }
 

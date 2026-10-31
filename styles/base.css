@@ -94,3 +94,22 @@ section h2 {
 	width: 80%;
 	margin: 0 auto;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container section {
+    border: 1px solid var(--third-color);
+    margin: 5px;
+}
+
+.filter a {
+    padding: 5px;
+    border: 1px solid var(--primary-color);
+    margin: 5px;
+}
