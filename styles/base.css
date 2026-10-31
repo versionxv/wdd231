@@ -1,3 +1,56 @@
+:root {
+    --primary-bg-color: black;
+    --primary-color: white;
+    --secondary-color: darkblue;
+    --third-color: blue;
+}
+
+* {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+}
+
+.text {
+    font-size: 16px;
+    padding: 1px;
+}
+
+footer, footer p, footer span {
+    background-color: var(--third-color);
+    width: 100%;
+}
+
+footer {
+    margin: 0 auto;
+}
+
+body {
+    display: block;
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+section img {
+	width: 240px;
+	height: 360px;
+	border: 1px solid var(--primary-color);
+	padding: 5px;
+	margin: 10px 1px 1px 1px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: var(--secondary-color);
+}
+
 #menu {
 	font-size: 1.5rem;
 	border: 0;
@@ -15,4 +68,29 @@
 
 #menu.open::before {
 	content: "❌";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.open a {
+	display: block;
+}
+
+section h2 {
+	border: 1px solid var(--primary-color);
+	background-color: var(--third-color);
+	width: 80%;
+	margin: 0 auto;
 }

@@ -26,7 +26,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -39,7 +39,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -51,7 +51,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -63,7 +63,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -77,7 +77,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -94,3 +94,38 @@ const courses = [
         completed: false
     }
 ]
+
+function createInfoCard(filteredCourses) {
+    document.querySelector(".container").innerHTML = ""
+    filteredCourses.forEach(course => {
+        let card = document.createElement("section");
+        let name = document.createElement("h3");
+
+        if (course.completed === true){
+            name.textContent = course.subject + course.number + " " + "✓";
+        } else {
+            name.textContent = course.subject + course.number;
+        }
+
+        card.appendChild(name);
+
+        document.querySelector(".container").appendChild(card);
+    });
+}
+
+createInfoCard(courses);
+
+const allLink = document.querySelector("#all");
+allLink.addEventListener("click", () => {createInfoCard(courses)});
+
+const cseLink = document.querySelector("#cse");
+cseLink.addEventListener("click", () => {
+    const cseCourses = courses.filter(course => course.subject === 'CSE');
+    createInfoCard(cseCourses);
+});
+
+const wddLink = document.querySelector("#wdd");
+wddLink.addEventListener("click", () => {
+    const wddCourses = courses.filter(course => course.subject === "WDD");
+    createInfoCard(wddCourses);
+})
