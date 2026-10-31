@@ -15,6 +15,8 @@
 .text {
     font-size: 16px;
     padding: 1px;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 footer, footer p, footer span {
@@ -24,6 +26,17 @@ footer, footer p, footer span {
 
 footer {
     margin: 0 auto;
+}
+
+.top {
+    display: flex;
+    flex-flow: row;
+    margin: 5px;
+}
+
+.top img {
+    width: 50px;
+    height: auto;
 }
 
 body {
