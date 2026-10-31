@@ -126,3 +126,10 @@ section h2 {
     border: 1px solid var(--primary-color);
     margin: 5px;
 }
+
+p {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
