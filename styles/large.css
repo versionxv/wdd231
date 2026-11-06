@@ -44,4 +44,9 @@
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr;
     }
+
+    .filter button {
+        padding: 15px 60px;
+        font-size: large;
+    }
 }
