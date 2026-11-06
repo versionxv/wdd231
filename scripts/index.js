@@ -121,17 +121,21 @@ function createInfoCard(filteredCourses) {
 
 createInfoCard(courses);
 
-const allLink = document.querySelector("#all");
-allLink.addEventListener("click", () => {createInfoCard(courses)});
+const allLink = document.getElementById("all");
+allLink.addEventListener("click", (e) =>{
+    e.preventDefault();
+    createInfoCard(courses)});
 
-const cseLink = document.querySelector("#cse");
-cseLink.addEventListener("click", () => {
+const cseLink = document.getElementById("cse");
+cseLink.addEventListener("click", (e) => {
+    e.preventDefault();
     const cseCourses = courses.filter(course => course.subject === 'CSE');
     createInfoCard(cseCourses);
 });
 
-const wddLink = document.querySelector("#wdd");
-wddLink.addEventListener("click", () => {
+const wddLink = document.getElementById("wdd");
+wddLink.addEventListener("click", (e) => {
+    e.preventDefault();
     const wddCourses = courses.filter(course => course.subject === "WDD");
     createInfoCard(wddCourses);
 })
