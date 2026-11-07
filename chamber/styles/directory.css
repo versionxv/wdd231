@@ -1,16 +1,15 @@
 :root {
     --primary-bg-color: black;
     --primary-color: white;
-    --secondary-color: darkblue;
-    --third-color: blue;
-    --other-bg-color: gray;
+    --other-bg-color: darkblue;
+    --button-color: gray;
 }
 
 :root:has(#theme:checked) {
     --primary-bg-color: white;
     --primary-color: black;
-    --secondary-color: darkblue;
-    --third-color: blue;
+    --other-bg-color: gray;
+    --button-color: darkblue;
 }
 
 body {
@@ -30,12 +29,17 @@ header {
     position: relative;
     padding: 0.5rem;
     align-items: center;
+    background-color: var(--other-bg-color);
 }
 
 .name {
     display: flex;
     flex-flow: row;
     align-items: center;
+}
+
+.name p {
+    margin-left: 5px;
 }
 
 .name img {
@@ -71,7 +75,7 @@ nav {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: var(--secondary-color, #ffffff);
+    background-color: var(--button-color);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     z-index: 99;
 }
@@ -96,13 +100,14 @@ nav {
     display: block;
     padding: 1rem;
     text-decoration: none;
-    color: var(--primary-bg-color, #1e293b);
+    color: var(--primary-bg-color);
     font-size: 1.25rem;
 }
 
 nav a:hover {
     text-decoration: underline;
-    background-color: var(--third-color);
+    background-color: var(--other-bg-color);
+    color: var(--primary-color);
 }
 
 .mode-checkbox {
@@ -113,7 +118,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: gray;
+  background-color: var(--button-color);
   width: 52px;
   height: 30px;
   border-radius: 50px;
@@ -125,7 +130,7 @@ nav a:hover {
 }
 
 .mode-ball {
-  background-color: gray;
+  background-color: var(--button-color);
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -151,6 +156,32 @@ nav a:hover {
   margin-right: 2px;
 }
 
+main h2 {
+    margin-left: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.layout ul {
+  list-style-type: none;
+  padding: 0; 
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout button {
+    padding: 10px 20px;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    margin: 5px;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -172,7 +203,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .card-head p, .card-body p, .card-body a {
@@ -211,6 +242,7 @@ footer {
 footer p {
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
+    margin-left: 10px;
 }
 
 .icons {
