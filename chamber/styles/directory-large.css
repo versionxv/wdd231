@@ -54,8 +54,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
-    margin: 10px;
+    margin: 10px 5px 10px 25px;
   }
+
+  .container section {
+    width: 25rem;
+  }
+
+  .card-head p, .card-body p, .card-body a {
+    font-size: medium;
+}
 
   footer {
     display: flex;
