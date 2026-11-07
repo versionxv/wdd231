@@ -5,13 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="scripts/default.js" defer></script>
+    <link rel="stylesheet" href="styles/directory.css">
 </head>
 <body>
-    <header></header>
+    
+    <header>
+        <div class="name">
+            <img src="images/placeholder-box.jpeg" alt="A simple placeholder">
+            <p>Placeholder Chamber of Commerce</p>
+        </div>
 
-    <main></main>
+        <div>
+            <input type="checkbox" id="theme" class="mode-checkbox" aria-label="Dark and Ligth Mode Button">
+            <label for="theme" class="mode-label">
+                <span class="icon sun">☀️</span>
+                <span class="icon moon">🌙</span>
+                <div class="mode-ball"></div>
+            </label>
+        </div>
 
-    <footer><p>©<span id="currentyear"></span>— Miguel J. Subero Saballo — Brasil</p>
-    <p>Last Modified:<span id="lastmodified"></span></p></footer>
+        <button type="button" id="menu" aria-label="Meunu Button"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <h2>Directory</h2>
+        <ul>
+            <li>
+                <button type="button" id="GRID">GRID</button>
+            </li>
+
+            <li>
+                <button type="button" id="list">LIST</button>
+            </li>
+        </ul>
+
+        <div class="container"></div>
+    </main>
+
+    <footer>
+
+        <div class="chamber">
+            <p>Placeholder Chamber of Commerce</p>
+            <p>99 Street</p>
+            <p>City, Country</p>
+            <p>info@placeholdercommercel.org</p>
+            <p>(111) 1234-5678</p>
+        </div>
+
+        <div class="icons">
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.png" alt="The instagram logo.">
+            </a>
+
+            <a href="https://web.whatsapp.com/">
+                <img src="images/whatsapp.png" alt="The Whatsapp logo.">
+            </a>
+
+            <a href="https://youtube.com/">
+                <img src="images/youtube.png" alt="The YouTube logo.">
+            </a>
+        </div>
+
+        <div class="year">
+            <p>WDD231 Class Project</p>
+            <p>Miguel J. Subero Saballo</p>
+            <p>©<span id="currentyear"></span> Placeholder Chamber of Commerce</p>
+            <p>Last Modified:<span id="lastmodified"></span>
+        </div>
+    </footer>
 </body>
 </html>
