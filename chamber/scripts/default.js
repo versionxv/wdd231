@@ -82,3 +82,17 @@ async function createDisplay(jsonPath = "./data/members.json") {
 document.addEventListener("DOMContentLoaded", () => {
     createDisplay(); 
 });
+
+const gridButton = document.getElementById('grid');
+
+const listButton = document.getElementById('list');
+
+const container = document.querySelector('.container');
+
+listButton.addEventListener('click', () => {
+    container.classList.add('list-view');
+});
+
+gridButton.addEventListener('click', () => {
+    container.classList.remove('list-view');
+});

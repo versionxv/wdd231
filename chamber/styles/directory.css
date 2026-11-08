@@ -262,3 +262,23 @@ footer p {
     width: 50px;
     height: auto;
 }
+
+.list-view section {
+    grid-column: span 3;
+    gap: 1px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.container.list-view .card-head,
+.container.list-view .card-body {
+    grid-column: span 3; 
+    margin: 0;
+    padding: 0;
+    text-align: left; 
+    align-items: flex-start;
+}
+
+.list-view img {
+    display: none;
+}

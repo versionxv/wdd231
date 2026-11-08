@@ -1,65 +1,65 @@
 [
   {
-    "shopTitle": "XXXXXX",
-    "shopTag": "YYYYYYYYYY",
-    "shopLogo": "images/placeholder-box.jpeg",
-    "shopEmail": "placeholder@",
+    "shopTitle": "McDonalds",
+    "shopTag": "I Love it!",
+    "shopLogo": "https://mcd-landings-q-static.appmcdonalds.com/uploads-quality/48px_86952f326f.svg",
+    "shopEmail": "email@macdonalds",
     "shopPhone": "1234 5678 9",
-    "shopUrl": "placeholder.com",
+    "shopUrl": "www.mcdonalds.com",
     "shopMembership": 1
   },
   {
-    "shopTitle": "XXXXXX",
-    "shopTag": "YYYYYYYYYY",
-    "shopLogo": "images/placeholder-box.jpeg",
-    "shopEmail": "placeholder@",
-    "shopPhone": "1234 5678 9",
-    "shopUrl": "placeholder.com",
+    "shopTitle": "Burger King",
+    "shopTag": "There's A New King And It's You",
+    "shopLogo": "https://www.burgerking.com.br/images/bklogos/BK-novo-logo.svg",
+    "shopEmail": "email@burgerking",
+    "shopPhone": "1030 4445 7",
+    "shopUrl": "www.burgerking.com",
+    "shopMembership": 3
+  },
+  {
+    "shopTitle": "PizzaHut",
+    "shopTag": "No one outpizzas the hut",
+    "shopLogo": "https://www.pizzahut.com.br/assets/images/new-brand/logo-footer.png",
+    "shopEmail": "email@pizzahut",
+    "shopPhone": "4321 5608 0",
+    "shopUrl": "www.pizzahut.com",
+    "shopMembership": 2
+  },
+  {
+    "shopTitle": "DOMINO's",
+    "shopTag": "Hungry for MORE",
+    "shopLogo": "https://www.dominos.com.br/assets/img/logo-blue-white.svg",
+    "shopEmail": "email@dominos",
+    "shopPhone": "1234 7878 8",
+    "shopUrl": "www.dominos.com",
     "shopMembership": 1
   },
   {
-    "shopTitle": "XXXXXX",
-    "shopTag": "YYYYYYYYYY",
-    "shopLogo": "images/placeholder-box.jpeg",
-    "shopEmail": "placeholder@",
-    "shopPhone": "1234 5678 9",
-    "shopUrl": "placeholder.com",
-    "shopMembership": 1
+    "shopTitle": "Starbucks",
+    "shopTag": "It's not just coffee. It's Starbucks.",
+    "shopLogo": "https://cdn.cookielaw.org/logos/178e65db-f98c-4c7c-8f4b-8636690f283f/01982e38-86c5-7fb8-90e8-a67e79ad1c21/0fd70ca7-8ae1-48d8-a939-07efaa9ee360/imagem.png",
+    "shopEmail": "email@starbucks",
+    "shopPhone": "3626 5678 0",
+    "shopUrl": "www.starbucks.com",
+    "shopMembership": 3
   },
   {
-    "shopTitle": "XXXXXX",
-    "shopTag": "YYYYYYYYYY",
-    "shopLogo": "images/placeholder-box.jpeg",
-    "shopEmail": "placeholder@",
-    "shopPhone": "1234 5678 9",
-    "shopUrl": "placeholder.com",
-    "shopMembership": 1
+    "shopTitle": "Foodtopia",
+    "shopTag": "You'll adore it!",
+    "shopLogo": "images/food.png",
+    "shopEmail": "email@foodtopia",
+    "shopPhone": "4422 5678 7",
+    "shopUrl": "www.foodtopia.com",
+    "shopMembership": 2
   },
   {
-    "shopTitle": "XXXXXX",
-    "shopTag": "YYYYYYYYYY",
-    "shopLogo": "images/placeholder-box.jpeg",
-    "shopEmail": "placeholder@",
-    "shopPhone": "1234 5678 9",
-    "shopUrl": "placeholder.com",
-    "shopMembership": 1
-  },
-  {
-    "shopTitle": "XXXXXX",
-    "shopTag": "YYYYYYYYYY",
-    "shopLogo": "images/placeholder-box.jpeg",
-    "shopEmail": "placeholder@",
-    "shopPhone": "1234 5678 9",
-    "shopUrl": "placeholder.com",
-    "shopMembership": 1
-  },
-  {
-    "shopTitle": "XXXXXX",
-    "shopTag": "YYYYYYYYYY",
-    "shopLogo": "images/placeholder-box.jpeg",
-    "shopEmail": "placeholder@",
-    "shopPhone": "1234 5678 9",
-    "shopUrl": "placeholder.com",
+    "shopTitle": "COCA-COLA",
+    "shopTag": "Real Magic",
+    "shopLogo": "https://www.coca-cola.com/content/dam/onexp/br/pt/offerings/christmas/Coca-Cola-original-logo-co.svg",
+    "shopEmail": "email@coca-cola",
+    "shopPhone": "9876 5432  1",
+    "shopUrl": "www.coca-cola.com",
     "shopMembership": 1
   }
 ]
