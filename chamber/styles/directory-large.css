@@ -24,7 +24,7 @@
     border: 1px solid var(--third-color);
    }
 
-   .name, main h2 {
+   .name, main h1 {
     margin-left: 5rem;
    }
 
@@ -46,7 +46,7 @@
     margin-left: 20px;
   }
 
-  main h2 {
+  main h1 {
     font-size: 2rem;
   }
 
