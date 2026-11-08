@@ -267,7 +267,6 @@ footer p {
     grid-column: span 3;
     gap: 1px;
     padding: 15px;
-    margin: 0 auto;
 }
 
 .container.list-view .card-head,
@@ -281,4 +280,10 @@ footer p {
 
 .list-view img {
     display: none;
+}
+
+.layout button.active {
+    font-weight: bold;
+    transform: scale(1.05);
+    transition: all 0.2s ease;
 }

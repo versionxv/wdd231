@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const gridButton = document.getElementById('grid');
+gridButton.classList.add('active');
 
 const listButton = document.getElementById('list');
 
@@ -91,8 +92,14 @@ const container = document.querySelector('.container');
 
 listButton.addEventListener('click', () => {
     container.classList.add('list-view');
+
+    listButton.classList.add('active');
+    gridButton.classList.remove('active');
 });
 
 gridButton.addEventListener('click', () => {
     container.classList.remove('list-view');
+
+    gridButton.classList.add('active');
+    listButton.classList.remove('active');
 });
