@@ -24,6 +24,8 @@ body {
   margin: 0 auto;
 }
 
+/* Standard Header */
+
 header {
     display: grid;
     grid-template-columns: 5fr 2fr 1fr;
@@ -183,6 +185,8 @@ button {
     margin: 5px;
 }
 
+/* Body Main Mostly Directory */
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -235,6 +239,8 @@ button {
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
 }
+
+/* Standard Footer */
 
 footer {
     display: block;
@@ -289,7 +295,7 @@ footer p {
     transition: all 0.2s ease;
 }
 
-/* Home CSS */
+/* Home Page details */
 
 .hero {
   position: relative;
@@ -322,4 +328,24 @@ footer p {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+}
+
+.weather {
+    width: 260px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #1e293b;
+    color: white;
+    text-align: center;
+}
+
+.temp {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.desc {
+    text-transform: capitalize;
+    color: #cbd5e1;
 }
