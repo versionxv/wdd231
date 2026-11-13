@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="scripts/default.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <link rel="icon" href="images/food.png">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
@@ -61,10 +61,14 @@
 
         <section class="weather">
             <h2 id="city">Loading...</h2>
-            <img id="weather-icon" src="" alt="Weather Icon" style="display:none;">
+            <img id="weather-icon" src="" alt="">
             <div class="temp" id="temp">--°C</div>
             <div class="desc" id="desc">Fetching weather...</div>
         </section>
+
+        <section class="event"></section>
+
+        <section class="example"></section>
     </main>
 
     <footer>

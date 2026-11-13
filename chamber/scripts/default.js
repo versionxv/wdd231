@@ -103,32 +103,3 @@ gridButton.addEventListener('click', () => {
     gridButton.classList.add('active');
     listButton.classList.remove('active');
 });
-
-const apiKey = "7a240712510374a5ac818b57fb11c680";
-const lat = 51.5074;
-const lon = -0.1278;
-const apiUrl = `https://openweathermap.org{lat}&lon=${lon}&units=metric&appid=${apiKey}`;
-
-async function loadWeather() {
-  try {
-    const response = await fetch(apiUrl);
-    if (!response.ok) throw new Error("Location not found or API key inactive");
-    
-    const data = await response.json();
-
-    document.getElementById("city").textContent = data.name;
-    document.getElementById("temp").textContent = `${Math.round(data.main.temp)}°C`;
-    document.getElementById("desc").textContent = data.weather.description;
-
-    const iconCode = data.weather.icon;
-    const iconImg = document.getElementById("weather-icon");
-    iconImg.src = `https://openweathermap.org{iconCode}@2x.png`;
-    iconImg.style.display = "inline";
-
-  } catch (error) {
-    document.getElementById("city").textContent = "Error";
-    document.getElementById("desc").textContent = error.message;
-  }
-}
-
-loadWeather();
