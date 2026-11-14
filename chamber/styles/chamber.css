@@ -330,22 +330,36 @@ footer p {
   font-weight: bold;
 }
 
-.weather {
-    width: 260px;
-    padding: 20px;
+/* Weather box */
+
+.weather h2, .event h2, .example h2 {
+    text-align: center;
+}
+
+.weather div {
+    width: 205px;
+    padding: 10px;
     border-radius: 12px;
     background: #1e293b;
     color: white;
     text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
 }
 
-.temp {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 10px 0;
+.weather section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-.desc {
+.weather p {
     text-transform: capitalize;
-    color: #cbd5e1;
+    font-size: 1.1rem;
+}
+
+.event p {
+    text-align: center;
 }

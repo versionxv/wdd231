@@ -34,7 +34,7 @@ async function loadWeather() {
         const container = document.querySelector(".weather");
 
         let town = document.createElement("h2");
-        town.innerHTML = data.city.name;
+        town.innerHTML = `${data.city.name} Forecast`;
         
         container.appendChild(town);
 
@@ -42,11 +42,14 @@ async function loadWeather() {
             const datePart = day.dt_txt.split(" ")[0];
             const [year, month, dayNum] = datePart.split("-");
             const shortDate = `${month}/${dayNum}`;
-            const temp = day.main.temp;
+            const temp = Math.round(day.main.temp);
             const description = day.weather[0].description;
             const imgLink = `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`
 
             let newDay = document.createElement("div");
+
+            let left = document.createElement("section");
+            let right = document.createElement("section");
 
             let dayDate = document.createElement("p");
             dayDate.innerHTML = shortDate;
@@ -63,10 +66,13 @@ async function loadWeather() {
 
             console.log(`${shortDate}: ${temp}°C - ${description}`);
 
-            newDay.appendChild(dayDate);
-            newDay.appendChild(dayImg);
-            newDay.appendChild(dayTemp);
-            newDay.appendChild(dayDesc);
+            left.appendChild(dayDate);
+            left.appendChild(dayImg);
+            right.appendChild(dayTemp);
+            right.appendChild(dayDesc);
+
+            newDay.appendChild(left);
+            newDay.appendChild(right);
 
             container.appendChild(newDay);
         });
