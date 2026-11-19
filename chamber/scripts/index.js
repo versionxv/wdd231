@@ -162,5 +162,67 @@ async function randomMember(jsonPath = "./data/members.json") {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-    randomMember(); 
+    randomMember();
+    createEvent();
 });
+
+async function createEvent(jsonPath = "./data/events.json") {
+    
+    const container = document.querySelector(".event-box");
+    container.innerHTML = "";
+
+    try {
+        const response = await fetch(jsonPath);
+        if (!response.ok) throw new Error(`No se pudo cargar el archivo: ${response.status}`);
+        
+        const eventList = await response.json();
+
+        eventList.forEach(event => {
+            let card = document.createElement("section");
+
+            let headPart = document.createElement("div");
+            let title = document.createElement("h3");
+
+            let bodyPart = document.createElement("div");
+            let logo = document.createElement("img");
+
+            let armPart = document.createElement("div");
+            let phone = document.createElement("p");
+            let place = document.createElement("p");
+            let date = document.createElement("p");
+
+            title.textContent = event.eventTitle;
+            date.textContent = event.eventDate;
+
+            logo.src = event.shopLogo;
+            logo.alt = `${event.shopTitle} logo`;
+
+            date.innerHTML = event.shopEmail ? `<strong>DATE:</strong> ${event.eventDate}` : "";
+            phone.innerHTML = event.shopPhone ? `<strong>PHONE:</strong> ${event.shopPhone}` : "";
+
+            place.innerHTML = event.eventAdress ? `<strong>LOCALE:</strong> ${event.eventAdress}` : "";
+
+            headPart.classList.add("card-head");
+            armPart.classList.add("card-arm");
+            bodyPart.classList.add("card-body");
+
+            headPart.appendChild(title);
+
+            armPart.appendChild(logo);
+
+            bodyPart.appendChild(phone);
+            bodyPart.appendChild(place);
+            bodyPart.appendChild(date);
+
+            card.appendChild(headPart);
+            card.appendChild(armPart);
+            card.appendChild(bodyPart);
+
+            container.appendChild(card);
+        });
+
+    } catch (error) {
+        console.error("Error while reading:", error);
+        container.innerHTML = `<p class="error">Error while loading the member list.</p>`;
+    }
+}

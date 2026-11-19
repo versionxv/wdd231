@@ -80,7 +80,7 @@ async function createDisplay(jsonPath = "./data/members.json") {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    createDisplay(); 
+    createDisplay();
 });
 
 const gridButton = document.getElementById('grid');

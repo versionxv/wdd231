@@ -1,0 +1,29 @@
+[
+  {
+    "eventTitle": "McDonalds How's Done",
+    "eventDate": "12/27",
+    "shopLogo": "https://mcd-landings-q-static.appmcdonalds.com/uploads-quality/48px_86952f326f.svg",
+    "shopEmail": "email@macdonalds",
+    "shopPhone": "1234 5678 9",
+    "shopUrl": "www.mcdonalds.com",
+    "eventAdress": "Some McDonalds"
+  },
+  {
+    "eventTitle": "Foodtopia Free Tasting",
+    "eventDate": "08/08",
+    "shopLogo": "images/food.png",
+    "shopEmail": "email@foodtopia",
+    "shopPhone": "4422 5678 7",
+    "shopUrl": "www.foodtopia.com",
+    "eventAdress": "Food Metropoli"
+  },
+  {
+    "eventTitle": "COCA-COLA Factory Visit",
+    "eventDate": "02/05",
+    "shopLogo": "https://www.coca-cola.com/content/dam/onexp/br/pt/offerings/christmas/Coca-Cola-original-logo-co.svg",
+    "shopEmail": "email@coca-cola",
+    "shopPhone": "9876 5432  1",
+    "shopUrl": "www.coca-cola.com",
+    "eventAdress": "North Sector"
+  }
+]

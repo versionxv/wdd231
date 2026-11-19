@@ -1,0 +1,9 @@
+Final WDD 231 Project Topic
+
+Made by Miguel J. Subero Saballo
+
+The idea is to create a website showcasing several high level
+Blazblue players from Brasil and the diferente characters they
+play, with tournament clips and other details in order to both
+pay tribute to their skills and the whole Fighting Game Community
+we have.

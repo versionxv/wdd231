@@ -14,21 +14,23 @@
     <meta name="description"
       content="WDD 231 – Chamber Project Directoy Page made by Miguel J. Subero Saballo">
     <meta name="author" content="Miguel J. Subero Saballo">
-    <meta property="og:title" content="Chamber Project Directoy Page made by Miguel J. Subero Saballo">
+    <meta property="og:title" content="Chamber Project Directoy Page">
     <meta property="og:description" content="A webpage that showcases Commerces of the region of Foodtown in order to provide information and foster Commerce.">
-    <meta property="og:image" content="https://github.com/versionxv/wdd231/blob/main/chamber/images/food.png">
+    <meta property="og:image" content="https://versionxv.github.io/wdd231/chamber/images/food.png">
     <meta property="og:url" content="https://versionxv.github.io/wdd231/chamber/directory.html">
 </head>
 <body>
-    
+
     <header>
         <div class="name">
-            <img src="images/food.png" alt="A simple food plate logo.">
+            <a href="index.html" class="name">
+            <img src="images/food.png" alt="Foodtown Chamber of Commerce logo">
             <p>Foodtown Chamber of Commerce</p>
+        </a>
         </div>
 
         <div>
-            <input type="checkbox" id="theme" class="mode-checkbox" aria-label="Dark and Ligth Mode Button.">
+            <input type="checkbox" id="theme" class="mode-checkbox" aria-label="Toggle dark and light mode">
             <label for="theme" class="mode-label">
                 <span class="icon sun">☀️</span>
                 <span class="icon moon">🌙</span>
@@ -40,8 +42,8 @@
 
         <nav>
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Directory</a></li>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Discover</a></li>
                 <li><a href="#">Join</a></li>
             </ul>
@@ -55,15 +57,15 @@
             <div class="inside">
                 <h1>Foodtown Chamber of Commerce</h1>
                 <p>Where your business grows as the taste of your food</p>
-                <a href="#start" class="hero-btn">Get Tasty</a>
+                <a href="#start" class="hero-btn">Join Us!</a>
             </div>
         </section>
         
         <section class="weather"></section>
 
         <section class="event">
-            <h2>Product Share Test</h2>
-            <p>Come the next date to enjoy a free food testing service.</p>
+            <h2>Visit our next events!</h2>
+            <div class="event-box"></div>
         </section>
 
         <section class="example">
@@ -83,16 +85,16 @@
         </div>
 
         <div class="icons">
-            <a href="https://www.instagram.com/">
-                <img src="images/instagram.png" alt="The instagram logo.">
+            <a href="https://www.instagram.com/" aria-label="Visit us on Instagram">
+                <img src="images/instagram.png">
             </a>
 
-            <a href="https://web.whatsapp.com/">
-                <img src="images/whatsapp.png" alt="The Whatsapp logo.">
+            <a href="https://web.whatsapp.com/" aria-label="Contact us on WhatsApp">
+                <img src="images/whatsapp.png">
             </a>
 
-            <a href="https://youtube.com/">
-                <img src="images/youtube.png" alt="The YouTube logo.">
+            <a href="https://youtube.com/" aria-label="Visit us on Instagram">
+                <img src="images/youtube.png" alt="">
             </a>
         </div>
 

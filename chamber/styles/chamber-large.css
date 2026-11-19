@@ -50,14 +50,14 @@
     font-size: 2rem;
     }
 
-    .container {
+    .container, .event-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
     margin: 10px 5px 10px 25px;
     }
 
-    .container section {
+    .container section, .event-box section {
     width: 25rem;
     }
 
