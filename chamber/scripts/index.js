@@ -33,7 +33,7 @@ async function loadWeather() {
 
         const container = document.querySelector(".weather");
 
-        let town = document.createElement("h2");
+        let town = document.querySelector(".town")
         town.innerHTML = `${data.city.name} Forecast`;
         
         container.appendChild(town);
