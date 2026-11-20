@@ -95,10 +95,32 @@ const courses = [
     }
 ]
 
+const courseDialog = document.getElementById("course-detail");
+const closeModal = document.getElementById("close-dialog");
+const modalTitle = document.getElementById("modal-title");
+const modalCredits = document.getElementById("modal-credits");
+const modalInfo = document.getElementById("modal-info");
+
+closeModal.addEventListener("click", () => {
+    courseDialog.close();
+})
+
+closeModal.textContent = "❌";
+
+courseDialog.addEventListener("click", (event) => {
+    if (event.target === courseDialog) {
+        courseDialog.close();
+    }
+});
+
 function createInfoCard(filteredCourses) {
     document.querySelector(".container").innerHTML = ""
+
     filteredCourses.forEach(course => {
-        let card = document.createElement("section");
+        let card = document.createElement("button");
+        card.type = "button";
+        card.id = course.subject + course.number;
+
         let name = document.createElement("h3");
 
         if (course.completed === true){
@@ -106,6 +128,14 @@ function createInfoCard(filteredCourses) {
         } else {
             name.textContent = course.subject + course.number;
         }
+
+        card.addEventListener("click", () => {
+            modalTitle.textContent = `${course.subject}${course.number}: ${course.title}`;
+            modalCredits.textContent = `Credits: ${course.credits}`;
+            modalInfo.textContent = course.description;
+
+            courseDialog.showModal();
+        });
 
         card.appendChild(name);
 

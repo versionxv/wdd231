@@ -91,6 +91,12 @@ nav a:hover, .filter button:hover {
     list-style: none;
 }
 
+.navigation a[aria-current="page"],
+.navigation a.active {
+    font-weight: bold;
+    border-bottom: 3px solid currentColor;
+}
+
 .navigation a {
     display: none;
     padding: 1rem;
@@ -117,7 +123,7 @@ section h2 {
     margin: 0 auto;
 }
 
-.container section {
+.container button {
     border: 1px solid var(--third-color);
     margin: 5px;
 }
@@ -149,4 +155,24 @@ p {
 
 .hidden {
     display: none;
+}
+
+dialog {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 500px;
+    width: 90%;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#close-modal {
+    float: right;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
 }

@@ -29,8 +29,8 @@
         
         <nav>
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Chamber Project</a></li>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="chamber/index.html">Chamber Project</a></li>
                 <li><a href="#">Final Project</a></li>
                 <li class="hidden"><a href="#"></a></li>
             </ul>
@@ -84,6 +84,13 @@
             </nav>
             <div class="container"></div>
             <p>Total Credits listed above is <span id="value"></span></p>
+
+            <dialog id="course-detail">
+                <button id="close-dialog"></button>
+                <h2 id="modal-title"></h2>
+                <p id="modal-credits"></p>
+                <p id="modal-info"></p>
+            </dialog>
         </section>
     </main>
 
