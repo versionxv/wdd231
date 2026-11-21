@@ -99,5 +99,43 @@
 
     /* Join Page */
 
+    .joining h1 {
+      text-align: left;
+      font-size: 2rem;
+      grid-column: 1 / -1;
+      margin-bottom: 0;
+    }
+
+    .joining {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      align-items: start;
+    }
+
+    .join-container form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .join-container .full-w {
+      grid-column: 1 / -1;
+    }
+
     /* Thankyou Display */
+
+    .thanks h1 {
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    .results {
+      margin: 0 auto;
+      max-width: 300px;
+    }
 }

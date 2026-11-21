@@ -55,60 +55,68 @@
 
         <h1>Please fill this form:</h1>
 
-        <section>
+        <section class="join-container">
             <form action="thankyou.html" method="get">
+            
+            <div class="short-w">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname"
+                title="Please enter your given name"
+                autocomplete="given-name" required>
+            </div>
+            
+            <div class="short-w">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname"
+                title="Please enter your last name"
+                autocomplete="family-name" required>
+            </div>
+            
+            <div class="short-w">
+                <label for="orgtitle">Organizational Title:</label>
+                <input type="text" id="orgtitle" name="orgtitle"
+                title="Please enter at least 7 characters using only letters, spaces, or hyphens."
+                autocomplete="organization-title"
+                pattern="[A-Za-z\s\-]{7,}" required>
+            </div>
+            
+            <div class="short-w">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="1234@business.com"
+                title="Please enter a valid email address"
+                autocomplete="email" required>
+            </div>
+            
+            <div class="short-w">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" placeholder="888 555"
+                autocomplete="tel" title="Please enter a valid contact number" required>
+            </div>
+            
+            <div class="short-w">
+                <label for="borg-name">Business/Organization Name:</label>
+                <input type="text" id="borg-name" name="borg-name"
+                title="Please tell us your Business/Organization name"
+                autocomplete="organization" required>
+            </div>
+            
+            <div class="full-w">
+                <label for="membership">Membership Level:</label>
+                <select id="membership" name="membership" required>
+                    <option value="" disabled selected>Select a membership level...</option>
+                    <option value="gold">Gold Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="np">NP Membership (Non-Profit - No Fee)</option>
+                </select>
+            </div>
 
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname"
-            title="Please enter your given name"
-            autocomplete="given-name" required>
-            <br><br>
-
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname"
-            title="Please enter your last name"
-            autocomplete="family-name" required>
-            <br><br>
-
-            <label for="orgtitle">Organizational Title:</label>
-            <input type="text" id="orgtitle" name="orgtitle"
-            title="Please enter at least 7 characters using only letters, spaces, or hyphens."
-            autocomplete="organization-title"
-            pattern="[A-Za-z\s\-]{7,}" required>
-            <br><br>
-
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="1234@business.com"
-            title="Please enter a valid email address"
-            autocomplete="email" required>
-            <br><br>
-
-            <label for="phone">Phone Number:</label>
-            <input type="tel" name="phone" id="phone" placeholder="888 555"
-            autocomplete="tel" title="Please enter a valid contact number" required>
-            <br><br>
-
-            <label for="borg-name">Business/Organization Name:</label>
-            <input type="text" id="borg-name" name="borg-name"
-            title="Please tell us your Business/Organization name"
-            autocomplete="organization" required>
-            <br><br>
-
-            <label for="membership">Membership Level:</label>
-            <select id="membership" name="membership" required>
-                <option value="" disabled selected>Select a membership level...</option>
-                <option value="gold">Gold Membership</option>
-                <option value="silver">Silver Membership</option>
-                <option value="bronze">Bronze Membership</option>
-                <option value="np">NP Membership (Non-Profit - No Fee)</option>
-            </select>
-            <br><br>
-
-            <label for="borg-desc">Business/Organization Description:</label><br>
-            <textarea name="borg-desc" id="borg-desc"
-            title="Please provide a brief explanation about your Business/Organization"
-            rows="4" cols="40"></textarea>
-            <br><br>
+            <div class="full-w">
+                <label for="borg-desc">Business/Organization Description:</label>
+                <textarea name="borg-desc" id="borg-desc"
+                title="Please provide a brief explanation about your Business/Organization"
+                rows="4" cols="35"></textarea>
+            </div>
 
             <input type="hidden" id="timestamp" name="timestamp">
 
@@ -117,25 +125,27 @@
 
         </section>
 
-        <section>
-            <h2></h2>
+        <section class="membership">
+            <h2>Membership Levels</h2>
 
-            <div class="modal-card">
-                <a href="#" class="open-modal" data-modal="modal-gold">Gold Membership</a>
-            </div>
+            <section>
+                <div class="modal-card">
+                    <a href="#" class="open-modal" data-modal="modal-gold">Gold Membership</a>
+                </div>
 
-            <div class="modal-card">
-                <a href="#" class="open-modal" data-modal="modal-silver">Silver Membership</a>
-            </div>
+                <div class="modal-card">
+                    <a href="#" class="open-modal" data-modal="modal-silver">Silver Membership</a>
+                </div>
 
-            <div class="modal-card">
-                <a href="#" class="open-modal" data-modal="modal-bronze">Bronze Membership</a>
-            </div>
+                <div class="modal-card">
+                    <a href="#" class="open-modal" data-modal="modal-bronze">Bronze Membership</a>
+                </div>
 
-            <div class="modal-card">
-                <a href="#" class="open-modal" data-modal="modal-np">Non-Profit Membership</a>
-            </div>
-           
+                <div class="modal-card">
+                    <a href="#" class="open-modal" data-modal="modal-np">Non-Profit Membership</a>
+                </div>
+            </section>
+
         </section>
 
         <dialog id="modal-gold">
@@ -181,6 +191,7 @@
             </ul>
             <button class="close-modal">Close</button>
         </dialog>
+        <br><br>
 
     </main>
 

@@ -383,4 +383,192 @@ footer p {
 
 /* Join Page Details */
 
+.joining h1, .membership h2, .thanks h1 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.join-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: var(--other-bg-color);
+  margin: 10px;
+  border: 1px solid var(--primary-color);
+}
+
+.join-container div {
+    margin-bottom: 15px;
+}
+
+.join-container label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+  field-sizing: content;
+  min-width: 150px;
+  max-width: 250px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="submit"], textarea, select {
+    border: 1px solid var(--primary-color);
+}
+
+input[type="submit"] {
+    padding: 5px;
+}
+
+input[type="submit"]:hover, select:hover {
+    cursor: pointer;
+}
+
+.modal-card a, .return {
+    text-decoration: none;
+    display: block;
+    padding: 16px 24px;
+    gap: 16px;
+    color: var(--primary-color);
+}
+
+.membership section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.modal-card, .return {
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.modal-card a:hover, .return:hover {
+    background-color: var(--other-bg-color);
+}
+
+dialog {
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  background-color: var(--primary-color);
+  color: var(--primary-bg-color);
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@keyframes goldPulse {
+  0% {
+    background-color: transparent;
+  }
+  10% {
+    background-color: #B59410;
+  }
+  20%, 100% {
+    background-color: transparent;
+  }
+}
+
+.modal-card a[data-modal="modal-gold"] {
+  animation: goldPulse 4s ease-in-out infinite;
+  transition: background-color 0.3s ease;
+}
+
+.modal-card a[data-modal="modal-gold"]:hover {
+  animation: none;
+  background-color: #B59410;
+}
+
+@keyframes silverPulse {
+  0% {
+    background-color: transparent;
+  }
+  10% {
+    background-color: #71706E;
+  }
+  20%, 100% {
+    background-color: transparent;
+  }
+}
+
+.modal-card a[data-modal="modal-silver"] {
+  animation: silverPulse 4s ease-in-out infinite;
+  transition: background-color 0.3s ease;
+}
+
+.modal-card a[data-modal="modal-silver"]:hover {
+  animation: none;
+  background-color: #71706E;
+}
+
+@keyframes bronzePulse {
+  0% {
+    background-color: transparent;
+  }
+  10% {
+    background-color: brown;
+  }
+  20%, 100% {
+    background-color: transparent;
+  }
+}
+
+.modal-card a[data-modal="modal-bronze"] {
+  animation: bronzePulse 4s ease-in-out infinite;
+  transition: background-color 0.3s ease;
+}
+
+.modal-card a[data-modal="modal-bronze"]:hover {
+  animation: none;
+  background-color: brown;
+}
+
+.close-modal {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 24px;
+  background-color: var(--button-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
 /* Thankyou Page Display */
+
+.basic {
+    text-align: center;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: var(--other-bg-color);
+    border: 1px solid var(--primary-color);
+}
+
+.results p {
+    margin-left: 10px;
+    max-width: 250px;
+}
+
+.return {
+    margin: 0 auto;
+}
