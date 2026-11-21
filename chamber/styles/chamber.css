@@ -410,12 +410,6 @@ footer p {
     font-weight: bold;
 }
 
-input[type="text"], input[type="email"], input[type="tel"] {
-  field-sizing: content;
-  min-width: 150px;
-  max-width: 250px;
-}
-
 input[type="text"], input[type="email"], input[type="tel"], input[type="submit"], textarea, select {
     border: 1px solid var(--primary-color);
 }
