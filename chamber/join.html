@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodtown Chamber Directory Page</title>
+    <title>Foodtown Chamber Join Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="scripts/default.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/join.js" defer></script>
     <link rel="icon" href="images/food.png">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
     <meta name="description"
-      content="WDD 231 – Chamber Project Directoy Page made by Miguel J. Subero Saballo">
+      content="WDD 231 – Chamber Project Join Page made by Miguel J. Subero Saballo">
     <meta name="author" content="Miguel J. Subero Saballo">
-    <meta property="og:title" content="Chamber Project Directoy Page made by Miguel J. Subero Saballo">
+    <meta property="og:title" content="Foodtown Chamber Join Page">
     <meta property="og:description" content="A webpage that showcases Commerces of the region of Foodtown in order to provide information and foster Commerce.">
     <meta property="og:image" content="https://versionxv.github.io/wdd231/chamber/images/food-quality.png">
     <meta property="og:url" content="https://versionxv.github.io/wdd231/chamber/directory.html">
@@ -51,8 +51,135 @@
         
     </header>
 
-    <main>
-        
+    <main class="joining">
+
+        <section>
+            <form action="thankyou.html" method="get">
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname"
+            title="Please enter your given name"
+            autocomplete="given-name" required>
+            <br><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname"
+            title="Please enter your last name"
+            autocomplete="last-name" required>
+            <br><br>
+
+            <label for="orgtitle">Organizational Title:</label>
+            <input type="text" id="orgtitle" name="orgtitle"
+            title="Please enter at least 7 characters using only letters, spaces, or hyphens."
+            autocomplete="organization-title"
+            pattern="[A-Za-z\s\-]{7,}" required>
+            <br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" placeholder="1234@business.com"
+            title="Please enter a valid email address"
+            autocomplete="email" required>
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" placeholder="888 555"
+            autocomplete="phone" title="Please enter a valid contact number" required>
+            <br><br>
+
+            <label for="borg-name">Business/Organization Name:</label>
+            <input type="text" id="borg-name" name="borg-name"
+            title="Please tell us your Business/Organization name"
+            autocomplete="organization" required>
+            <br><br>
+
+            <label for="membership">Membership Level:</label>
+            <select id="membership" name="membership" required>
+                <option value="" disabled selected>Select a membership level...</option>
+                <option value="gold">Gold Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="np">NP Membership (Non-Profit - No Fee)</option>
+            </select>
+            <br><br>
+
+            <label for="borg-desc">Business/Organization Description:</label><br>
+            <textarea name="borg-desc" id="borg-desc"
+            title="Please provide a brief explanation about your Business/Organization"
+            rows="4" cols="40"></textarea>
+            <br><br>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <input type="submit" value="Apply for Membership">
+            </form>
+
+        </section>
+
+        <section>
+            <h2></h2>
+
+            <div class="modal-card">
+                <a href="#" class="open-modal" data-modal="modal-gold">Gold Membership</a>
+            </div>
+
+            <div class="modal-card">
+                <a href="#" class="open-modal" data-modal="modal-silver">Silver Membership</a>
+            </div>
+
+            <div class="modal-card">
+                <a href="#" class="open-modal" data-modal="modal-bronze">Bronze Membership</a>
+            </div>
+
+            <div class="modal-card">
+                <a href="#" class="open-modal" data-modal="modal-np">Non-Profit Membership</a>
+            </div>
+           
+        </section>
+
+        <dialog id="modal-gold">
+            <h3>Gold Membership Benefits</h3>
+            <p><strong>Cost: </strong>$200/month</p>
+            <ul>
+                <li>All Other Tiers Benefits</li>
+                <li>50% discount on all event sponsorships and exclusive offers</li>
+                <li>VIP invitation to all our CEO events</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="modal-silver">
+            <h3>Silver Membership Benefits</h3>
+            <p><strong>Cost :</strong>$175/month</p>
+            <ul>
+                <li>All Bronze Tier Benefits</li>
+                <li>Rotation in our spotlight</li>
+                <li>Invitation to all our CEO events</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="modal-bronze">
+            <h3>Bronze Membership Benefits</h3>
+            <p><strong>Cost: </strong>$100/month</p>
+            <ul>
+                <li>All Non-Profit Benefits</li>
+                <li>Invitation to our yearly Business Dinner</li>
+                <li>20% discount on all event sponsorships</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="modal-np">
+            <h3>Non-Profit Membership Benefits</h3>
+            <p><strong>Cost: </strong>FREE</p>
+            <ul>
+                <li>Monthly chamber newsletter</li>
+                <li>Basic directory listing</li>
+                <li>Information on how to join our events</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
     </main>
 
     <footer>
