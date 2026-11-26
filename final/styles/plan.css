@@ -1,0 +1,45 @@
+:root {
+    --bg-color: black;
+    --reverse-bg: white;
+    --main-color: darkblue;
+    --second-color: blue;
+    --third-color: lightblue;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--reverse-bg);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Cinzel Decorative', serif;
+  font-weight: 400;
+}
+
+.cinzel-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.large {
+    width: 200px;
+    height: auto;
+}
+
+.wide {
+    width: 400px;
+    height: auto;
+}
